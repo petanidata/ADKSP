@@ -1,10 +1,5 @@
 # Text Mining (Penambangan Teks)
 
-**Mata Kuliah:** Analitika Data Keuangan Sektor Publik  
-**Program Studi:** DIV | Topik: 08 – Text Mining
-
----
-
 ## 1. Konsep Text Mining
 
 Text Mining adalah proses **mengekstraksi informasi dan pengetahuan yang bermakna** dari data teks tidak terstruktur (unstructured text) menggunakan teknik komputasi.

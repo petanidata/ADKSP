@@ -1,10 +1,5 @@
 # Forecasting & Deret Waktu (Time Series)
 
-**Mata Kuliah:** Analitika Data Keuangan Sektor Publik  
-**Program Studi:** DIV | Topik: 07 – Forecasting
-
----
-
 ## 1. Konsep Forecasting
 
 Forecasting (peramalan) adalah proses **memprediksi nilai masa depan** berdasarkan pola historis data deret waktu (time series).

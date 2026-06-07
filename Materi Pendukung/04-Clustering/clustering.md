@@ -1,10 +1,5 @@
 # Clustering (Pengelompokan Data)
 
-**Mata Kuliah:** Analitika Data Keuangan Sektor Publik  
-**Program Studi:** DIV | Topik: 04 – Clustering
-
----
-
 ## 1. Konsep Clustering
 
 Clustering adalah teknik **Unsupervised Learning** yang mengelompokkan data ke dalam **klaster-klaster** berdasarkan kemiripan (similarity), **tanpa menggunakan label** yang sudah ditentukan sebelumnya.

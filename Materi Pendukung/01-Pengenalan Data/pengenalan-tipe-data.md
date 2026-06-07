@@ -1,10 +1,5 @@
 # Pengenalan & Tipe Data dalam Data Mining
 
-**Mata Kuliah:** Analitika Data Keuangan Sektor Publik  
-**Program Studi:** DIV | Topik: 01 – Pengenalan Data
-
----
-
 ## 1. Mengapa Tipe Data Penting?
 
 Memahami tipe data adalah **fondasi utama** dalam analitika data. Pemilihan metode analisis, visualisasi, dan preprocessing sangat bergantung pada jenis data yang kita miliki.

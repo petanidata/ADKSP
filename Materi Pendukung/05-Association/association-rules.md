@@ -1,10 +1,5 @@
 # Association Rules (Aturan Asosiasi)
 
-**Mata Kuliah:** Analitika Data Keuangan Sektor Publik  
-**Program Studi:** DIV | Topik: 05 – Association Rules
-
----
-
 ## 1. Konsep Association Rules
 
 Association Rules Mining adalah teknik **Unsupervised Learning** yang mencari **pola hubungan tersembunyi** antara item-item dalam suatu dataset transaksi.

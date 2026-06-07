@@ -1,10 +1,5 @@
 # Estimasi & Regresi (Estimation)
 
-**Mata Kuliah:** Analitika Data Keuangan Sektor Publik  
-**Program Studi:** DIV | Topik: 06 – Estimasi
-
----
-
 ## 1. Konsep Estimasi / Regresi
 
 Regresi adalah teknik **Supervised Learning** yang memprediksi **nilai numerik kontinu** berdasarkan satu atau lebih variabel input.

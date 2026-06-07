@@ -1,10 +1,5 @@
 # Preprocessing Data
 
-**Mata Kuliah:** Analitika Data Keuangan Sektor Publik  
-**Program Studi:** DIV | Topik: 02 – Eksplorasi & Preprocessing Data
-
----
-
 ## 1. Apa itu Preprocessing Data?
 
 Preprocessing data adalah serangkaian **proses membersihkan dan menyiapkan data mentah** menjadi format yang siap dianalisis oleh algoritma Data Mining.

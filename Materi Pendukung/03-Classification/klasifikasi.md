@@ -1,10 +1,5 @@
 # Klasifikasi Data (Classification)
 
-**Mata Kuliah:** Analitika Data Keuangan Sektor Publik  
-**Program Studi:** DIV | Topik: 03 – Klasifikasi
-
----
-
 ## 1. Konsep Klasifikasi
 
 Klasifikasi adalah teknik **Supervised Learning** yang bertujuan **memprediksi kategori/kelas** suatu data berdasarkan fitur-fitur yang ada. Model "belajar" dari data berlabel (training data) untuk kemudian memprediksi label pada data baru.
