@@ -24,13 +24,13 @@ print(sys.executable)
 2. Output akan menampilkan path lengkap ke `python.exe` (contoh hasil):
 
 ```
-C:\Users\muttaqin.nama-user\AppData\Local\Programs\Orange\python.exe
+C:\Users\nama-user\AppData\Local\Programs\Orange\python.exe
 ```
 
 3. Artinya: semua perintah `pip install` harus dijalankan terhadap interpreter tersebut, mis.:
 
 ```
-"C:\Users\muttaqin.nama-user\AppData\Local\Programs\Orange\python.exe" -m pip install psycopg2-binary
+"C:\Users\nama-user\AppData\Local\Programs\Orange\python.exe" -m pip install psycopg2-binary
 ```
 
 Tips: di widget `Python Script` ada tombol `Run` dan tombol salin output — minta mahasiswa menyalin hasil `sys.executable` untuk memastikan mereka menjalankan `pip` pada interpreter yang benar.
