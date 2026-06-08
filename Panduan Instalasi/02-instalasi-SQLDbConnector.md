@@ -1,57 +1,72 @@
-# Panduan singkat: Pasang PostgreSQL connector untuk Orange (psycopg2-binary)
+# Panduan Instalasi Connector PostgreSQL untuk Orange
 
-Tujuan singkat: pastikan paket `psycopg2-binary` dipasang ke interpreter Python yang dipakai Orange (bukan ke Python sistem lain).
+Panduan ini menjelaskan langkah singkat memasang PostgreSQL connector (`psycopg2-binary`) sehingga dapat digunakan oleh widget SQL di Orange. Panduan ditujukan untuk instalasi Orange standalone (Windows / macOS).
 
-Langkah 1 — Cek interpreter Orange (di Windows/macOS)
-- Buka Widget `Python Script` di Orange dan jalankan:
+## Prasyarat
+- Orange sudah terpasang dan dapat dijalankan.
+- Koneksi internet untuk mengunduh paket Python.
+- Hak akses untuk menjalankan `pip` pada interpreter Orange (jalankan terminal sebagai Administrator jika perlu).
+
+## Langkah 1 — Cek interpreter Python yang dipakai Orange
+1. Buka Orange, tambahkan dan buka Widget `Python Script`.
+2. Jalankan kode berikut di widget:
 
 ```
 import sys
 print(sys.executable)
 ```
 
-- Catat path yang muncul (contoh Windows: `C:\Users\<nama-user>\AppData\Local\Programs\Orange\python.exe`; macOS: `/Applications/Orange.app/Contents/MacOS/python`).
+3. Catat path yang ditampilkan. Contoh:
+- Windows: `C:\Users\<nama-user>\AppData\Local\Programs\Orange\python.exe`
+- macOS: `/Applications/Orange.app/Contents/MacOS/python` atau `/Users/<nama-user>/Library/Application Support/Orange/python/bin/python3`
 
-Langkah 2 — Pasang `psycopg2-binary` ke interpreter tersebut
-- Di terminal (Command Prompt / PowerShell / Terminal), jalankan perintah dengan path dari langkah 1:
+> Semua perintah `pip install` harus dijalankan terhadap interpreter ini.
 
-Windows contoh:
+## Langkah 2 — Pasang `psycopg2-binary`
+Jalankan perintah `pip install` dengan memanggil modul `pip` via interpreter dari Langkah 1.
 
-```
-"C:\Users\<nama-user>\AppData\Local\Programs\Orange\python.exe" -m pip install psycopg2-binary
-```
+Contoh Windows (ganti `<path_python_orange>` sesuai hasil Langkah 1):
 
-macOS contoh (jika path dari widget):
-
-```
-/Applications/Orange.app/Contents/MacOS/python -m pip install psycopg2-binary
+```powershell
+"<path_python_orange>" -m pip install psycopg2-binary
 ```
 
-Langkah 3 — Verifikasi pemasangan
-- Periksa paket terpasang:
+Contoh macOS:
 
+```bash
+<path_python_orange> -m pip install psycopg2-binary
 ```
+
+Catatan: `psycopg2-binary` direkomendasikan untuk lingkungan pembelajaran karena mudah dipasang.
+
+## Langkah 3 — Verifikasi pemasangan
+- Cek paket terpasang dari terminal:
+
+```bash
 "<path_python_orange>" -m pip show psycopg2-binary
 ```
 
-- Atau di widget Python jalankan:
+- Atau uji dari Widget `Python Script` di Orange:
 
 ```
 import psycopg2
 print('psycopg2 OK')
 ```
 
-Catatan singkat
-- Gunakan `psycopg2-binary` untuk kemudahan pada lingkungan pembelajaran. Untuk produksi, pertimbangkan `psycopg2` dan dependensi sistem.
-- Jika instalasi gagal karena compiler/header, ikuti instruksi platform:
-  - Windows: biasanya tidak perlu; jalankan Command Prompt sebagai Administrator jika perlu.
-  - macOS: jalankan `xcode-select --install` jika muncul error compile.
+## Troubleshooting singkat
+- Error "pg_config not found" atau error compile:
+  - macOS: jalankan `xcode-select --install` lalu ulangi pemasangan.
+  - Linux: pasang `libpq-dev` dan `python3-dev` (tidak umum untuk instalasi standalone Orange).
+- Jika pemasangan tidak terlihat di Orange, pastikan Anda memanggil `pip` pada path `sys.executable` yang benar.
 
-FAQ singkat
-- Mengapa harus pakai path dari `sys.executable`? Karena Orange menggunakan interpreter sendiri, paket yang dipasang ke Python lain tidak akan terlihat oleh Orange.
+## Catatan penting
+- Orange menggunakan interpreter sendiri; menginstal paket pada Python lain tidak akan membuat paket tersedia di Orange.
+- Untuk keperluan produksi, gunakan `psycopg2` (non-binary) dan pasang dependensi sistem yang diperlukan.
 
-Butuh bantuan tambahan?
-- Saya bisa buatkan skrip batch/PowerShell untuk Windows yang menerima path atau mencoba mendeteksi lokasi instalasi Orange secara otomatis.
+## Bantuan tambahan
+- Jika diinginkan, saya bisa:
+  - Membuat skrip PowerShell/Batch untuk Windows yang menanyakan path atau mencoba mendeteksi lokasi Orange.
+  - Menambahkan instruksi layar (screenshot) jika Anda menyediakan gambar.
 
-File panduan ini: [Panduan Instalasi/02-instalasi-SQLDbConnector.md](Panduan%20Instalasi/02-instalasi-SQLDbConnector.md#L1)
+File panduan ini: `Panduan Instalasi/02-instalasi-SQLDbConnector.md`
 
