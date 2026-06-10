@@ -8,29 +8,46 @@ Memahami tipe data adalah **fondasi utama** dalam analitika data. Pemilihan meto
 
 ---
 
-## 2. Hierarki Tipe Data
+## 2. Klasifikasi Tipe Data
+
+Tipe data dibagi menjadi dua kelompok utama. Untuk data **Numerik**, terdapat tambahan pembagian berdasarkan **Skala Pengukuran**.
+
+### 2.1 Tipe Data
 
 ```mermaid
-mindmap
-  root((Tipe Data))
-    Kategorikal
-      Nominal
-        Tidak ada urutan
-        Contoh: Provinsi, Jenis Pemda
-      Ordinal
-        Ada urutan
-        Contoh: Predikat Kinerja
-    Numerik
-      Diskrit
-        Nilai bulat
-        Contoh: Jumlah SKPD
-      Kontinu
-        Interval
-          Nol relatif
-          Contoh: Skor Indeks
-        Rasio
-          Nol absolut
-          Contoh: Anggaran APBD
+flowchart TD
+    TD(["Tipe Data"])
+    TD --> KAT["Kategorikal\nData berupa kategori/label"]
+    TD --> NUM["Numerik\nData berupa angka yang dapat\ndihitung atau diukur"]
+
+    KAT --> NOM["Nominal\nTidak memiliki urutan\nContoh: Jenis Kelamin | Provinsi | Agama"]
+    KAT --> ORD["Ordinal\nMemiliki urutan/peringkat\nContoh: Predikat Kinerja | Tingkat Pendidikan | Ranking"]
+
+    NUM --> DIS["Diskrit\nHasil perhitungan (count),\numumnya bilangan bulat\nContoh: Jumlah Pegawai | Jumlah SKPD | Jumlah Program"]
+    NUM --> KON["Kontinu\nHasil pengukuran (measurement),\ndapat bernilai pecahan\nContoh: Anggaran APBD | Pendapatan | Berat Badan"]
+
+    style KAT fill:#ffe0b2,stroke:#e65100
+    style NUM fill:#e3f2fd,stroke:#1565c0
+    style NOM fill:#fff9c4,stroke:#f57f17
+    style ORD fill:#fff9c4,stroke:#f57f17
+    style DIS fill:#e1f5fe,stroke:#01579b
+    style KON fill:#e1f5fe,stroke:#01579b
+```
+
+### 2.2 Skala Pengukuran Numerik
+
+Khusus untuk data **Numerik**, terdapat dua skala pengukuran yang menentukan makna nilai nol dan jenis operasi yang valid:
+
+```mermaid
+flowchart TD
+    SPN(["Skala Pengukuran Numerik"])
+
+    SPN --> INT["Interval\nNol relatif (0 ≠ tidak ada)\nSelisih bermakna\nContoh: Tahun Lahir | Suhu Celsius | Suhu Fahrenheit"]
+    SPN --> RAS["Rasio\nNol absolut (0 = tidak ada)\nSelisih dan perbandingan bermakna\nContoh: Jumlah Pegawai | Anggaran APBD | Berat Badan"]
+
+    style SPN fill:#f3e5f5,stroke:#6a1b9a
+    style INT fill:#e3f2fd,stroke:#1565c0
+    style RAS fill:#e8f5e9,stroke:#1b5e20
 ```
 
 ---
@@ -86,11 +103,11 @@ mindmap
 
 ---
 
-### 3.4 Data Numerik — Kontinu (Interval & Rasio)
+### 3.4 Data Numerik — Kontinu
 
-- **Definisi:** Nilai **dapat berupa pecahan**, ada nilai di antara dua nilai manapun
-- **Interval:** Nol bersifat **relatif** (nol = titik referensi, bukan "tidak ada")
-- **Rasio:** Nol bersifat **absolut** (nol = benar-benar tidak ada)
+- **Definisi:** Nilai **dapat berupa pecahan**, hasil pengukuran (measurement)
+- **Operasi valid:** Semua operasi aritmetika, termasuk nilai desimal
+- **Catatan:** Data kontinu diukur dengan **Skala Interval** atau **Skala Rasio** (lihat Bagian 4)
 
 | Kode_Pemda | Anggaran_APBD   | Realisasi_APBD  | % Realisasi |
 |------------|-----------------|-----------------|-------------|
@@ -98,54 +115,83 @@ mindmap
 | PEMDA002   | 1.870.000.000   | 1.289.300.000   | 68,95%      |
 | PEMDA003   | 950.000.000     | 190.000.000     | 20,00%      |
 
-> ✅ Anggaran Rp 0 = benar-benar tidak ada anggaran → ini **Rasio**  
-> ✅ "PEMDA002 menyerap 2× lebih sedikit dari PEMDA001" → perbandingan bermakna
+> ✅ Anggaran APBD dan Realisasi APBD adalah data Kontinu berskala **Rasio** (nol = benar-benar tidak ada anggaran)
 
 ---
 
-## 4. Skala Pengukuran (Stevens, 1946)
+## 4. Skala Pengukuran Numerik
 
-```mermaid
-flowchart LR
-    A["🔴 NOMINAL\nKategori tanpa urutan\nCth: Provinsi, Jenis Pemda"] --> B["🟠 ORDINAL\nKategori dengan urutan\nCth: Predikat Kinerja"]
-    B --> C["🔵 INTERVAL\nJarak sama, nol relatif\nCth: Skor Indeks Fiskal"]
-    C --> D["🟢 RASIO\nJarak sama, nol absolut\nCth: Anggaran, Realisasi"]
-    
-    style A fill:#ff9999,stroke:#cc0000
-    style B fill:#ffcc99,stroke:#cc7700
-    style C fill:#99ccff,stroke:#0055cc
-    style D fill:#99ff99,stroke:#007700
-```
+Untuk data numerik (baik Diskrit maupun Kontinu), terdapat dua skala pengukuran yang menentukan makna nilai nol dan operasi yang diperbolehkan.
 
-| Skala        | Urutan | Jarak Sama | Nol Absolut | Contoh Kolom APBD          |
-|--------------|:------:|:----------:|:-----------:|----------------------------|
-| **Nominal**  |   ✗    |     ✗      |      ✗      | Kode_Pemda, Provinsi       |
-| **Ordinal**  |   ✓    |     ✗      |      ✗      | Predikat (Kurang→Sangat Baik) |
-| **Interval** |   ✓    |     ✓      |      ✗      | Skor_Indeks, Ranking       |
-| **Rasio**    |   ✓    |     ✓      |      ✓      | Anggaran, Realisasi, PAD   |
+### 4.1 Skala Interval
+
+- **Nol bersifat relatif:** nilai 0 adalah titik referensi, bukan berarti "tidak ada"
+- **Selisih bermakna:** jarak antar nilai dapat dibandingkan
+- **Perbandingan (kali lipat) TIDAK bermakna**
+
+> Contoh: Suhu 0°C bukan berarti "tidak ada suhu". Suhu 20°C tidak bisa dikatakan "2× lebih panas" dari 10°C.
+
+| Contoh Data     | Keterangan                          |
+|-----------------|-------------------------------------|
+| Tahun Lahir     | Tahun 0 bukan "tidak ada tahun"     |
+| Suhu Celsius    | 0°C bukan "tidak ada suhu"          |
+| Suhu Fahrenheit | 0°F bukan "tidak ada suhu"          |
+
+### 4.2 Skala Rasio
+
+- **Nol bersifat absolut:** nilai 0 berarti benar-benar "tidak ada"
+- **Selisih bermakna:** jarak antar nilai dapat dibandingkan
+- **Perbandingan (kali lipat) BERMAKNA**
+
+> Contoh: Anggaran Rp 0 berarti benar-benar tidak ada anggaran. Anggaran Rp 2 M = 2 kali lipat Anggaran Rp 1 M ✓
+
+| Contoh Data     | Keterangan                                    |
+|-----------------|-----------------------------------------------|
+| Jumlah Pegawai  | 0 pegawai = benar-benar tidak ada pegawai     |
+| Anggaran APBD   | Rp 0 = benar-benar tidak ada anggaran         |
+| Berat Badan     | 0 kg = benar-benar tidak ada berat            |
+
+### 4.3 Perbandingan Skala Pengukuran Numerik
+
+| Skala        | Nol      | Selisih Bermakna | Perbandingan Bermakna | Contoh dalam APBD         |
+|--------------|:--------:|:----------------:|:---------------------:|---------------------------|
+| **Interval** | Relatif  | ✓                | ✗                     | Tahun Lahir, Skor Indeks  |
+| **Rasio**    | Absolut  | ✓                | ✓                     | Anggaran, Realisasi, PAD  |
 
 ---
 
 ## 5. Diagram Alir Identifikasi Tipe Data
 
 ```mermaid
-graph TD
-    A[Kolom Data] --> B{Apakah berupa angka?}
-    B -- Tidak --> C[KATEGORIKAL]
-    B -- Ya --> D[NUMERIK]
+flowchart TD
+    A(["Data / Kolom"])
+    A --> B{"Berupa angka?"}
+    B -- Tidak --> C["KATEGORIKAL"]
+    B -- Ya --> D["NUMERIK"]
 
-    C --> E{Ada urutan bermakna?}
-    E -- Tidak --> F["🔴 NOMINAL\nProvinsi, Kode_Pemda"]
-    E -- Ya --> G["🟠 ORDINAL\nPredikat Kinerja"]
+    C --> E{"Ada urutan bermakna?"}
+    E -- Tidak --> F["Nominal\nContoh: Kode_Pemda, Provinsi,\nJenis Kelamin, Agama"]
+    E -- Ya --> G["Ordinal\nContoh: Predikat Kinerja,\nTingkat Pendidikan, Ranking"]
 
-    D --> H{Hanya nilai bulat?}
-    H -- Ya --> I["🟡 DISKRIT\nJumlah SKPD, Jumlah ASN"]
-    H -- Tidak --> J[KONTINU]
+    D --> H{"Hanya nilai bulat\nhasil perhitungan?"}
+    H -- Ya --> I["Diskrit\nContoh: Jumlah SKPD,\nJumlah ASN, Jumlah Program"]
+    H -- Tidak --> J["Kontinu\nContoh: Anggaran APBD,\nPendapatan, Berat Badan"]
 
-    J --> K{Ada nol absolut?}
-    K -- Tidak --> L["🔵 INTERVAL\nSkor, Indeks"]
-    K -- Ya --> M["🟢 RASIO\nAnggaran, Realisasi, PAD"]
+    I --> K{"Nol = tidak ada?"}
+    J --> K
+
+    K -- Tidak --> L["Skala Interval\nContoh: Tahun Lahir,\nSuhu Celsius, Suhu Fahrenheit"]
+    K -- Ya --> M["Skala Rasio\nContoh: Jumlah Pegawai, Anggaran,\nRealisasi, PAD, Berat Badan"]
+
+    style F fill:#fff9c4,stroke:#f57f17
+    style G fill:#fff9c4,stroke:#f57f17
+    style I fill:#e1f5fe,stroke:#01579b
+    style J fill:#e1f5fe,stroke:#01579b
+    style L fill:#e3f2fd,stroke:#1565c0
+    style M fill:#e8f5e9,stroke:#1b5e20
 ```
+
+> ℹ️ **Skala Interval** dan **Skala Rasio** adalah **Skala Pengukuran Numerik** — berlaku untuk data Diskrit maupun Kontinu.
 
 ---
 
@@ -157,9 +203,9 @@ Dalam **Data Mining**, setiap **kolom** dalam dataset disebut **feature**, **atr
 graph LR
     DS[("📁 Dataset\nkeuangan_pemda.csv\n103 baris × 12 kolom")] --> F1["Feature 1\nKode_Pemda\n(Nominal)"]
     DS --> F2["Feature 2\nTahun\n(Diskrit)"]
-    DS --> F3["Feature 3\nAnggaran_APBD\n(Rasio)"]
-    DS --> F4["Feature 4\nRealisasi_APBD\n(Rasio)"]
-    DS --> F5["Feature 5\nPAD\n(Rasio)"]
+    DS --> F3["Feature 3\nAnggaran_APBD\n(Kontinu - Rasio)"]
+    DS --> F4["Feature 4\nRealisasi_APBD\n(Kontinu - Rasio)"]
+    DS --> F5["Feature 5\nPAD\n(Kontinu - Rasio)"]
     DS --> FN["... (7 kolom lagi)"]
     DS --> TG["🎯 TARGET\nPredikat\n(Ordinal)"]
 
@@ -235,7 +281,8 @@ keuangan_pemda.csv — Peta Tipe Data
 
 ┌──────────┬──────┬──────────────┬──────────────┬──────────┬──────────────┬──────────┐
 │Kode_Pemda│Tahun │Anggaran_APBD │Realisasi_APBD│    PAD   │Dana_Transfer │ Predikat │
-│ Nominal  │Disk. │    Rasio     │    Rasio     │  Rasio   │    Rasio     │ Ordinal  │
+│ Nominal  │Disk. │  Kontinu     │  Kontinu     │ Kontinu  │  Kontinu     │ Ordinal  │
+│          │      │  (Rasio)     │  (Rasio)     │ (Rasio)  │  (Rasio)     │          │
 ├──────────┼──────┼──────────────┼──────────────┼──────────┼──────────────┼──────────┤
 │ PEMDA001 │ 2024 │2.350.000.000 │2.112.500.000 │450000000 │ 1.800.000.000│  Baik    │
 │ PEMDA002 │ 2024 │1.870.000.000 │1.289.300.000 │  NaN  ←──┤ 1.200.000.000│  Cukup   │ ← Missing
@@ -251,21 +298,29 @@ keuangan_pemda.csv — Peta Tipe Data
 
 ## 9. Ringkasan
 
-| Tipe Data    | Contoh Kolom APBD              | Operasi yang Valid                   |
-|--------------|--------------------------------|--------------------------------------|
-| Nominal      | Kode_Pemda, Provinsi           | = , ≠                                |
-| Ordinal      | Predikat_Kinerja               | = , ≠ , < , >                        |
-| Diskrit      | Jumlah_SKPD, Tahun             | +, −, ×, ÷ (nilai bulat)             |
-| Interval     | Skor_Indeks, Ranking           | +, − (perbandingan tidak bermakna)   |
-| Rasio        | Anggaran, Realisasi, PAD       | +, −, ×, ÷ (semua operasi valid)     |
+### Tipe Data
+
+| Tipe Data    | Kelompok     | Contoh Kolom APBD          | Operasi yang Valid          |
+|--------------|:------------:|----------------------------|-----------------------------|
+| **Nominal**  | Kategorikal  | Kode_Pemda, Provinsi       | = , ≠                       |
+| **Ordinal**  | Kategorikal  | Predikat_Kinerja           | = , ≠ , < , >               |
+| **Diskrit**  | Numerik      | Tahun, Jumlah_SKPD         | +, −, ×, ÷ (nilai bulat)    |
+| **Kontinu**  | Numerik      | Anggaran, Realisasi, PAD   | +, −, ×, ÷                  |
+
+### Skala Pengukuran Numerik
+
+| Skala        | Nol      | Selisih Bermakna | Perbandingan Bermakna | Contoh                      |
+|--------------|:--------:|:----------------:|:---------------------:|-----------------------------|
+| **Interval** | Relatif  | ✓                | ✗                     | Tahun Lahir, Suhu Celsius   |
+| **Rasio**    | Absolut  | ✓                | ✓                     | Anggaran, Realisasi, PAD    |
 
 ---
 
 ## 10. Referensi
 
-- Fayyad, U. et al. (1996). *From Data Mining to Knowledge Discovery in Databases*. AAAI Press.
 - Han, J., Kamber, M., & Pei, J. (2012). *Data Mining: Concepts and Techniques* (3rd ed.). Morgan Kaufmann.
-- Stevens, S. S. (1946). *On the theory of scales of measurement*. Science, 103(2684), 677-680.
+- Fayyad, U. et al. (1996). *From Data Mining to Knowledge Discovery in Databases*. AAAI Press.
+- Stevens, S. S. (1946). On the theory of scales of measurement. *Science*, 103(2684), 677–680.
 
 ---
 
