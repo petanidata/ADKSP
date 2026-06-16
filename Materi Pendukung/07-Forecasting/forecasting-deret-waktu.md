@@ -1,4 +1,4 @@
-# Forecasting & Deret Waktu (Time Series)
+﻿# Forecasting & Deret Waktu (Time Series)
 
 ## 1. Konsep Forecasting
 
@@ -158,7 +158,7 @@ flowchart TD
 
 ### Skenario Praktis
 
-Kementerian Keuangan ingin **memproyeksikan besaran APBD kabupaten/kota** untuk 3 tahun ke depan guna:
+ ingin **memproyeksikan besaran APBD kabupaten/kota** untuk 3 tahun ke depan guna:
 - Menentukan alokasi Dana Alokasi Umum (DAU)
 - Merencanakan kapasitas fiskal daerah
 - Deteksi dini daerah yang akan mengalami tekanan fiskal
@@ -189,3 +189,4 @@ Proyeksi APBD Provinsi X (Miliar Rp):
 ---
 
 *Materi: Analitika Data Keuangan Sektor Publik | Program DIV*
+
