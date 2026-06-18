@@ -196,4 +196,4 @@ flowchart LR
 
 ---
 
-*Materi: Analitika Data Keuangan Sektor Publik | Program DIV*
+*Materi: Analitika Data Keuangan Sektor Publik*

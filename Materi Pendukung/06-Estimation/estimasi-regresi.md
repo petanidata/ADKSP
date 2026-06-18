@@ -186,4 +186,4 @@ Badan Keuangan Daerah ingin **memprediksi realisasi akhir tahun** sejak pertenga
 
 ---
 
-*Materi: Analitika Data Keuangan Sektor Publik | Program DIV*
+*Materi: Analitika Data Keuangan Sektor Publik*

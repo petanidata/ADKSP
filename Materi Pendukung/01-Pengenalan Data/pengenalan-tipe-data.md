@@ -324,4 +324,4 @@ keuangan_pemda.csv — Peta Tipe Data
 
 ---
 
-*Materi: Analitika Data Keuangan Sektor Publik | Program DIV*
+*Materi: Analitika Data Keuangan Sektor Publik*

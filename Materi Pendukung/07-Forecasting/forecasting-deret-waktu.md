@@ -188,5 +188,5 @@ Proyeksi APBD Provinsi X (Miliar Rp):
 
 ---
 
-*Materi: Analitika Data Keuangan Sektor Publik | Program DIV*
+*Materi: Analitika Data Keuangan Sektor Publik*
 

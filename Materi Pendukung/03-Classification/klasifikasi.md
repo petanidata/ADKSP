@@ -482,5 +482,5 @@ flowchart TD
 
 ---
 
-*Materi: Analitika Data Keuangan Sektor Publik | Program DIV — Politeknik Keuangan Negara STAN*
+*Materi: Analitika Data Keuangan Sektor Publik*
 
