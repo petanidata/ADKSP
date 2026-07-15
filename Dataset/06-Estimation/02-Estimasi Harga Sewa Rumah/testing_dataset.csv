@@ -1,0 +1,101 @@
+ID_Sewa,Luas_Bangunan_m2,Jumlah_Kamar_Tidur,Jumlah_Kamar_Mandi,Status_Furnished,Jarak_Pusat_Kota_km,Fasilitas_Parkir,Tipe_Properti,Harga_Sewa_Juta_per_Tahun
+SEW0501,105,3,2,Full Furnished,2.2,Ya,Apartemen,65.02
+SEW0502,130,3,2,Semi Furnished,3.1,Tidak,Kos,19.43
+SEW0503,43,2,1,Semi Furnished,0.5,Ya,Apartemen,44.32
+SEW0504,27,4,3,Full Furnished,1.9,Ya,Rumah,50.05
+SEW0505,95,1,1,Semi Furnished,0.7,Ya,Rumah,35.13
+SEW0506,115,2,2,Full Furnished,12.1,Ya,Kos,22.26
+SEW0507,18,4,3,Kosongan,5.2,Ya,Rumah,34.36
+SEW0508,19,2,1,Semi Furnished,1.9,Ya,Rumah,32.31
+SEW0509,65,1,1,Full Furnished,0.6,Ya,Apartemen,50.51
+SEW0510,82,3,2,Semi Furnished,2.9,Ya,Rumah,43.58
+SEW0511,111,2,2,Full Furnished,13.6,Tidak,Rumah,44.46
+SEW0512,61,3,2,Semi Furnished,8.4,Ya,Rumah,37.9
+SEW0513,109,3,2,Full Furnished,7.0,Tidak,Kos,16.44
+SEW0514,103,3,2,Semi Furnished,18.7,Ya,Apartemen,53.8
+SEW0515,85,3,2,Kosongan,4.1,Tidak,Apartemen,43.05
+SEW0516,53,5,3,Kosongan,1.2,Tidak,Rumah,42.4
+SEW0517,102,3,2,Semi Furnished,9.8,Tidak,Rumah,38.9
+SEW0518,87,1,1,Semi Furnished,18.5,Tidak,Apartemen,32.4
+SEW0519,85,2,1,Kosongan,1.8,Tidak,Apartemen,40.29
+SEW0520,145,2,2,Kosongan,0.2,Tidak,Apartemen,51.06
+SEW0521,71,5,3,Semi Furnished,0.8,Ya,Apartemen,65.98
+SEW0522,90,4,3,Semi Furnished,1.7,Ya,Apartemen,65.59
+SEW0523,34,2,1,Semi Furnished,5.2,Tidak,Rumah,26.06
+SEW0524,84,2,1,Kosongan,4.8,Tidak,Rumah,29.48
+SEW0525,132,3,3,Kosongan,1.2,Tidak,Rumah,44.7
+SEW0526,132,2,1,Full Furnished,3.2,Ya,Kos,18.96
+SEW0527,82,3,2,Kosongan,11.5,Ya,Rumah,33.27
+SEW0528,86,3,2,Semi Furnished,9.6,Ya,Kos,17.64
+SEW0529,40,2,1,Kosongan,8.5,Ya,Kos,10.76
+SEW0530,38,3,2,Semi Furnished,6.7,Ya,Apartemen,45.14
+SEW0531,111,2,1,Semi Furnished,0.2,Ya,Apartemen,57.71
+SEW0532,36,4,3,Kosongan,5.8,Tidak,Rumah,27.51
+SEW0533,158,2,2,Kosongan,3.4,Ya,Apartemen,61.44
+SEW0534,74,2,2,Semi Furnished,16.8,Tidak,Apartemen,36.06
+SEW0535,115,2,2,Semi Furnished,1.5,Tidak,Kos,13.98
+SEW0536,106,3,2,Semi Furnished,2.1,Ya,Rumah,47.54
+SEW0537,18,3,2,Kosongan,17.4,Ya,Apartemen,27.59
+SEW0538,85,4,3,Semi Furnished,1.7,Tidak,Rumah,45.28
+SEW0539,112,3,2,Kosongan,1.8,Ya,Apartemen,56.52
+SEW0540,80,2,2,Semi Furnished,7.3,Ya,Rumah,40.09
+SEW0541,63,5,3,Semi Furnished,0.4,Ya,Apartemen,59.88
+SEW0542,138,2,2,Kosongan,1.5,Ya,Rumah,42.77
+SEW0543,25,2,1,Semi Furnished,5.7,Ya,Rumah,25.81
+SEW0544,69,4,3,Semi Furnished,2.4,Tidak,Rumah,44.86
+SEW0545,108,3,2,Full Furnished,6.2,Ya,Rumah,51.25
+SEW0546,100,4,3,Semi Furnished,7.0,Ya,Rumah,51.1
+SEW0547,82,4,2,Semi Furnished,4.2,Ya,Kos,15.59
+SEW0548,105,4,3,Semi Furnished,0.3,Ya,Kos,20.57
+SEW0549,59,2,1,Kosongan,3.3,Ya,Rumah,28.86
+SEW0550,20,2,1,Kosongan,6.7,Ya,Rumah,20.83
+SEW0551,45,1,1,Semi Furnished,22.6,Ya,Apartemen,26.89
+SEW0552,62,4,2,Kosongan,1.1,Ya,Kos,14.87
+SEW0553,67,3,2,Semi Furnished,20.3,Tidak,Kos,7.34
+SEW0554,59,2,1,Semi Furnished,5.1,Ya,Kos,8.22
+SEW0555,67,2,2,Semi Furnished,3.2,Ya,Apartemen,50.07
+SEW0556,68,2,2,Kosongan,2.7,Ya,Rumah,30.97
+SEW0557,30,3,2,Semi Furnished,5.2,Tidak,Apartemen,43.23
+SEW0558,103,3,2,Kosongan,20.0,Ya,Kos,12.98
+SEW0559,43,2,2,Semi Furnished,0.3,Tidak,Rumah,30.54
+SEW0560,44,2,1,Full Furnished,1.8,Ya,Kos,10.61
+SEW0561,56,2,1,Semi Furnished,4.3,Tidak,Kos,9.82
+SEW0562,77,1,1,Semi Furnished,2.6,Ya,Kos,18.49
+SEW0563,90,3,2,Full Furnished,3.2,Tidak,Kos,19.58
+SEW0564,19,3,2,Full Furnished,7.0,Ya,Rumah,44.33
+SEW0565,65,2,2,Kosongan,7.2,Ya,Kos,13.76
+SEW0566,64,2,2,Semi Furnished,1.1,Ya,Rumah,35.75
+SEW0567,74,3,2,Full Furnished,8.3,Ya,Apartemen,56.61
+SEW0568,37,3,3,Semi Furnished,2.6,Ya,Rumah,43.17
+SEW0569,106,4,3,Semi Furnished,3.4,Tidak,Apartemen,58.66
+SEW0570,86,1,1,Kosongan,2.8,Ya,Rumah,28.21
+SEW0571,142,3,2,Kosongan,1.3,Ya,Rumah,49.63
+SEW0572,174,3,2,Kosongan,10.3,Tidak,Rumah,45.74
+SEW0573,18,2,2,Semi Furnished,2.5,Ya,Apartemen,39.92
+SEW0574,109,3,2,Semi Furnished,1.5,Ya,Kos,17.39
+SEW0575,112,3,2,Full Furnished,5.4,Tidak,Rumah,55.88
+SEW0576,123,4,3,Kosongan,19.8,Tidak,Apartemen,48.73
+SEW0577,68,2,1,Full Furnished,1.6,Ya,Rumah,39.5
+SEW0578,77,2,2,Full Furnished,0.2,Ya,Kos,18.92
+SEW0579,99,1,1,Semi Furnished,6.7,Ya,Rumah,36.47
+SEW0580,19,1,1,Semi Furnished,11.4,Tidak,Rumah,18.78
+SEW0581,95,3,2,Kosongan,4.4,Ya,Apartemen,53.47
+SEW0582,34,1,1,Full Furnished,8.4,Ya,Rumah,28.92
+SEW0583,85,3,2,Semi Furnished,1.4,Ya,Apartemen,54.37
+SEW0584,83,3,2,Semi Furnished,6.6,Ya,Kos,16.98
+SEW0585,92,4,3,Full Furnished,1.7,Tidak,Apartemen,67.23
+SEW0586,142,2,2,Full Furnished,4.9,Ya,Rumah,56.19
+SEW0587,151,4,2,Full Furnished,1.2,Ya,Kos,29.16
+SEW0588,166,2,1,Kosongan,3.5,Ya,Rumah,42.7
+SEW0589,24,4,2,Kosongan,4.7,Ya,Kos,11.52
+SEW0590,88,3,2,Kosongan,1.8,Ya,Rumah,41.38
+SEW0591,134,3,3,Full Furnished,11.9,Tidak,Apartemen,67.7
+SEW0592,44,3,2,Full Furnished,6.6,Ya,Rumah,40.79
+SEW0593,31,3,2,Full Furnished,13.9,Ya,Apartemen,45.37
+SEW0594,60,3,2,Full Furnished,0.7,Ya,Kos,20.24
+SEW0595,96,2,1,Semi Furnished,2.1,Ya,Apartemen,48.16
+SEW0596,125,3,2,Kosongan,4.2,Ya,Rumah,40.47
+SEW0597,99,3,2,Semi Furnished,16.9,Ya,Kos,15.88
+SEW0598,94,3,2,Semi Furnished,0.3,Ya,Kos,16.85
+SEW0599,67,4,2,Semi Furnished,0.8,Ya,Rumah,45.57
+SEW0600,87,2,1,Kosongan,6.3,Ya,Apartemen,36.1
