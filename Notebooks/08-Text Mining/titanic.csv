@@ -1,0 +1,31 @@
+PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+1,0,3,Andi Pratama,male,22,1,0,A/5 21171,7.25,,S
+2,1,1,Siti Rahma,female,38,1,0,PC 17599,71.2833,C85,C
+3,1,3,Budi Santoso,male,26,0,0,STON/O2. 3101282,7.925,,S
+4,1,1,Maya Putri,female,35,1,0,113803,53.1,C123,S
+5,0,3,Rizky Hidayat,male,35,0,0,373450,8.05,,S
+6,0,3,Dewi Lestari,female,,0,0,330877,8.4583,,Q
+7,0,1,Fajar Nugroho,male,54,0,0,17463,51.8625,E46,S
+8,0,3,Rina Amelia,female,2,3,1,349909,21.075,,S
+9,1,3,Hana Safitri,female,27,0,2,347742,11.1333,,S
+10,1,2,Galih Ramadhan,male,14,1,0,237736,,,C
+11,1,3,Nadia Aulia,female,4,1,1,PP 9549,16.7,G6,S
+12,1,1,Intan Puspita,female,58,0,0,113783,26.55,C103,S
+13,0,3,Arif Wibowo,male,20,0,0,A/5. 2151,8.05,,S
+14,0,3,Lina Marlina,female,,1,5,347082,31.275,,
+15,0,3,Yusuf Maulana,male,14,0,0,350406,7.8542,,S
+16,1,2,Putri Maharani,female,55,0,0,248706,16,,S
+17,0,3,Rafi Saputra,male,2,4,1,382652,29.125,,Q
+18,1,2,Farah Nabila,female,31,0,0,244373,,,
+19,0,3,Agus Salim,male,32,0,0,345763,18,,S
+20,1,1,Zahra Khairunnisa,female,29,0,0,PC 17757,30.6958,B57 B59 B63 B66,C
+21,0,2,Doni Kurniawan,male,34,0,0,C.A. 24579,10.5,,S
+22,1,2,Nina Kartika,female,21,0,0,SC/Paris 2123,13,,S
+23,0,3,Ilham Akbar,male,,0,0,330923,7.75,,Q
+24,1,1,Alya Ramadani,female,36,0,0,113788,31,C50,S
+25,1,3,Tasya Nuraini,female,8,3,1,349909,21.075,,S
+26,0,3,Hendra Gunawan,male,40,0,0,347077,,,
+27,1,1,Melati Anggraini,female,19,0,0,PC 17483,263,C45,C
+28,0,3,Bayu Prakoso,male,23,0,0,349216,7.8958,,S
+29,1,2,Shinta Ayu,female,,0,0,28004,10.5,,S
+30,0,3,Reza Maulana,male,28,0,0,350035,7.2292,,C
