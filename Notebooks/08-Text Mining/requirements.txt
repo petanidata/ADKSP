@@ -4,3 +4,6 @@ seaborn
 missingno
 openpyxl 
 scikit-learn
+openai
+pypdf 
+ipywidgets
